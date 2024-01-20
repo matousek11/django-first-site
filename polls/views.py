@@ -20,3 +20,6 @@ def results(request, question_id):
     return HttpResponse(response % question_id)
 def vote(request, question_id):
     return HttpResponse("You're voting on question %s." % question_id)
+
+def owner(request):
+    return HttpResponse("Hello, world. 488a6b6c is the polls index.")
